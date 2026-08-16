@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-button"
+    onclick="toggleMusic()">
+    🎵
+</button>
+
+<div class="hearts"></div>
+
+<div class="container center">
+
+    <p class="small-text">
+        You unlocked the first secret...
+    </p>
+
+    <h1>For You, My Love 💌</h1>
+
+    <div class="envelope-area">
+
+        <div class="envelope" id="envelope">
+
+            <div class="envelope-back"></div>
+
+            <div class="letter-paper">
+
+                <p id="typingText"></p>
+
+            </div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-heart">
+                ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+    <p id="envelopeInstruction">
+        Tap the envelope 💌
+    </p>
+
+    <button
+        id="continueButton"
+        class="hidden"
+        onclick="location.href='memories.html'">
+        Continue Our Story →
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Secret For You 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-button"
+    onclick="toggleMusic()">
+    🎵
+</button>
+
+<div class="hearts"></div>
+
+<div class="login-card">
+
+    <div class="lock">🔐</div>
+
+    <h1>Something Special Awaits...</h1>
+
+    <p>
+        This little surprise is only for one special person.
+    </p>
+
+    <p class="hint">
+        Hint: The password is something only we know 💜
+    </p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter secret password"
+    >
+
+    <button onclick="checkPassword()">
+        Unlock My Surprise ❤️
+    </button>
+
+    <p id="wrongPassword" class="error"></p>
+
+</div>
+
+
+<!-- Birthday Countdown -->
+
+<div class="countdown-box">
+
+    <h2>Until Your Special Day 🎂</h2>
+
+    <div class="countdown">
+
+        <div>
+            <span id="days">00</span>
+            <small>Days</small>
+        </div>
+
+        <div>
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+
+        <div>
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+
+        <div>
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Question ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="question-page">
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-button"
+    onclick="toggleMusic()">
+    🎵
+</button>
+
+<div class="hearts"></div>
+
+<div class="container center">
+
+    <div class="question-heart">
+        ❤️
+    </div>
+
+    <h1>One Little Question...</h1>
+
+    <p class="question">
+        Will you continue making beautiful memories
+        with me? 🥹💕
+    </p>
+
+    <div class="answer-area">
+
+        <button
+            id="yesButton"
+            class="yes-button"
+            onclick="sayYes()">
+            YES 💗
+        </button>
+
+        <button
+            id="noButton"
+            class="no-button"
+            onclick="moveNoButton()">
+            NO 😜
+        </button>
+
+    </div>
+
+    <div id="yesMessage" class="hidden">
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+        <h2>I Knew It! 🥹</h2>
+
+        <p>
+            Then let's make many more memories together.
+        </p>
+
+        <button onclick="location.href='surprise.html'">
+            Your Final Surprise 🎁
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

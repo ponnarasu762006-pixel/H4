@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories 📸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-button"
+    onclick="toggleMusic()">
+    🎵
+</button>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+    <h1>Our Memories 📸</h1>
+
+    <p class="subtitle">
+        Every picture has a story.
+        Every story has you. 💕
+    </p>
+
+    <div class="slideshow">
+
+        <img
+            id="slideImage"
+            src="images/photo1.jpg"
+            alt="Our Memory">
+
+        <div class="slide-caption" id="slideCaption">
+            The beginning of something beautiful 💗
+        </div>
+
+        <button class="prev" onclick="previousSlide()">
+            ❮
+        </button>
+
+        <button class="next" onclick="nextSlide()">
+            ❯
+        </button>
+
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <div class="memory-text">
+
+        <p>
+            Looking at these pictures reminds me how lucky I am
+            to have you in my life.
+        </p>
+
+        <p>
+            These aren't just photos.
+            They're pieces of our story. 💝
+        </p>
+
+    </div>
+
+    <button onclick="location.href='reasons.html'">
+        Something Else I Want To Tell You 💕
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
